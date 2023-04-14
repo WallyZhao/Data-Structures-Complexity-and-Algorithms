@@ -109,7 +109,7 @@ print('Vec as a single list of values: %s' % result)
  
  #### In order to get value one by one you must do the following: 
   1. Explain what each item in the list comprehension is going to be ... in our case --> "value"
-  2. To now access where value is, define where it comes from ... in our case --> "row"; therefore, for row in vec
+  2. To now access where value is, define where it comes from ... in our case --> "row"; therefore, ```for row in vec```
   3. Finally we construct our last for clause to denote that value comes from the row
 
 # With List Comprehension, the order of your For clauses MATTER
