@@ -87,4 +87,44 @@ Values of example_set: 13
   * Subset - Boolean operator
   * Proper Superset - Boolean operator
   * Superset - Boolean operator
-    * There's too many examples to list over, just refer to [note]((https://mrparkonline.github.io/courses/datastruct/sets/)) 😭
+    * There's too many examples to list over, just refer to [note](https://mrparkonline.github.io/courses/datastruct/sets/) 😭
+## Disjoint: A Set Behaviour Property
+### Two sets are considered disjointed when two sets share no common value. 
+
+ * Let A and B both represent a set. 
+ * If A & B is empty, then set A and B are considered disjointed.
+ * To check this in python there is a method called: ```isdisjoint()```
+
+## Set Operators as Methods
+ * Yeah you can do this, refer to [note](https://mrparkonline.github.io/courses/datastruct/sets/)
+
+## Assignment Operation & Updating Methods
+ * This is a way to affect an orginal set with another and assign the result back to the original set... [note](https://mrparkonline.github.io/courses/datastruct/sets/)
+
+## Set Comprehension 
+ * IT'S THE SAME AS LIST COMPREHENSION... LOOK!!!
+```python
+# Set Comprehension Example
+def isPalindrome(x):
+    ''' isPalindrome() returns True if string X is a palindrome '''
+    return x == x[::-1]
+
+nums = list(range(1,10000))
+palindromic_set = {num for num in nums if isPalindrome(str(num))}
+
+print('Palindromic Numbers Set from 1 to 10000:')
+print(palindromic_set)
+
+# Output 
+Palindromic Numbers Set from 1 to 10000:
+{1, 2, 3, 4, 5, 6, 7, 8, 9, 515, 11, 6666, 525, 9229, 1551, 4114, 22, 535, 33, 545, 5665, 8228, 3113, 555, 44, 9779, 565, 55, 4664, 7227, 575, 2112, 66, 585, 8778, 77, 3663, 6226, 595, 1111, 88, 606, 7777, 99, 101, 2662, 616, 5225, 111, 626, 6776, 121, 9339, 636, 1661, 4224, 131, 646, 141, 5775, 656, 8338, 151, 3223, 666, 161, 9889, 676, 4774, 7337, 171, 686, 2222, 181, 696, 8888, 3773, 191, 6336, 707, 1221, 202, 717, 7887, 212, 2772, 727, 5335, 222, 737, 6886, 232, 9449, 747, 1771, 4334, 242, 757, 252, 5885, 767, 8448, 3333, 262, 777, 9999, 272, 787, 4884, 7447, 282, 2332, 797, 292, 8998, 808, 3883, 6446, 303, 9009, 818, 1331, 313, 828, 7997, 2882, 323, 5445, 838, 8008, 333, 848, 6996, 343, 9559, 1881, 858, 4444, 7007, 353, 868, 363, 5995, 878, 8558, 3443, 373, 6006, 888, 383, 898, 4994, 7557, 393, 2442, 909, 5005, 404, 919, 3993, 6556, 414, 9119, 929, 1441, 4004, 424, 939, 2992, 434, 5555, 949, 8118, 3003, 444, 959, 9669, 454, 1991, 969, 4554, 7117, 464, 2002, 979, 474, 8668, 989, 3553, 484, 6116, 999, 1001, 494, 7667, 2552, 505, 5115}
+```
+## Ending notes for Sets 
+ * Sets aren't sliceable or indexable
+ * Sets cannot been nested in a set 
+ * Sets do not have order
+ * Sets cannot guarantee that their values will be in order
+ * Sets do not record a value's position
+ 
+
+
